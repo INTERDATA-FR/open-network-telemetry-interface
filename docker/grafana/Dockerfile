@@ -6,7 +6,7 @@ MAINTAINER Julien LORENT <jlorent@interdata.fr>
 
 RUN apt-get -y update && \
     apt-get -y upgrade && \
-    apt-get -y install git adduser libfontconfig wget make curl &&\
+    apt-get -y install git adduser libfontconfig wget make curl && \
     apt-get clean
 
 ARG GRAFANA_VERSION

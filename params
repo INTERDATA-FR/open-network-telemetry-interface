@@ -11,3 +11,9 @@ export GRAFANA_CONTAINER_NAME   = interdata_grafana
 export GRAFANA_IMAGE_NAME       = interdatafr/interdata-docker-grafana
 export GRAFANA_IMAGE_VERSION    = 6.0.0-beta2
 export GRAFANA_IMAGE            = $(GRAFANA_IMAGE_NAME):$(GRAFANA_IMAGE_VERSION)
+
+export INFLUXDB_DOCKERFILE       = ./docker/influxdb/
+export INFLUXDB_CONTAINER_NAME   = interdata_influxdb1
+export INFLUXDB_IMAGE_NAME       = interdatafr/interdata-docker-influxdb
+export INFLUXDB_IMAGE_VERSION    = 1.7.4
+export INFLUXDB_IMAGE            = $(INFLUXDB_IMAGE_NAME):$(INFLUXDB_IMAGE_VERSION)
