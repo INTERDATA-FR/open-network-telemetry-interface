@@ -1,0 +1,13 @@
+#!/bin/bash
+
+export DOCKER_FILE  = docker-compose.yml
+
+export BASE_IMAGE_NAME  = phusion/baseimage
+export BASE_IMAGE_TAG   = 0.9.22
+export BASE_IMAGE       = $(BASE_IMAGE_NAME):$(BASE_IMAGE_TAG)
+
+export GRAFANA_DOCKERFILE       = ./docker/grafana/
+export GRAFANA_CONTAINER_NAME   = interdata_grafana
+export GRAFANA_IMAGE_NAME       = interdatafr/interdata-docker-grafana
+export GRAFANA_IMAGE_VERSION    = 6.0.0-beta2
+export GRAFANA_IMAGE            = $(GRAFANA_IMAGE_NAME):$(GRAFANA_IMAGE_VERSION)
