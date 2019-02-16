@@ -6,6 +6,9 @@ grafana:
   tty: true
   links:
     - influxdb1
+  volumes:
+    - ./config/grafana/datasources/:/etc/grafana/provisioning/datasources/
+    - ./data/grafana/:/var/lib/grafana
 
 influxdb1:
   container_name: $INFLUXDB_CONTAINER_NAME
