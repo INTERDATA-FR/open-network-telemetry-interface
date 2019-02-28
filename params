@@ -17,3 +17,9 @@ export INFLUXDB_CONTAINER_NAME   = interdata_influxdb1
 export INFLUXDB_IMAGE_NAME       = interdatafr/interdata-docker-influxdb
 export INFLUXDB_IMAGE_VERSION    = 1.7.4
 export INFLUXDB_IMAGE            = $(INFLUXDB_IMAGE_NAME):$(INFLUXDB_IMAGE_VERSION)
+
+export TELEGRAF_DOCKERFILE       = ./docker/telegraf/
+export TELEGRAF_CONTAINER_NAME   = interdata_telegraf1
+export TELEGRAF_IMAGE_NAME       = interdatafr/interdata-docker-telegraf
+export TELEGRAF_IMAGE_VERSION    = 1.9.5-1
+export TELEGRAF_IMAGE            = $(TELEGRAF_IMAGE_NAME):$(TELEGRAF_IMAGE_VERSION)
