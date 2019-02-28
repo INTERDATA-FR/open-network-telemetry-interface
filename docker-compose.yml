@@ -27,7 +27,9 @@ services:
   telegraf1:
     container_name: interdata_telegraf1
     image: $TELEGRAF_IMAGE
-    network_mode: bridge
+    links:
+      - influxdb1
+      - influxdb2
     tty: true
     #volumes:
       #- ./config/telegraf1/telegraf.conf:/etc/telegraf/telegraf.conf
